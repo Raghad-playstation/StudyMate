@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyMate | Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-page">
+
+    <!-- Header -->
+    <header class="dashboard-header">
+
+        <h1 class="dashboard-logo">StudyMate</h1>
+
+      
+<nav class="dashboard-nav">
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="add_task_form.php">Add Task</a>
+    <a href="my_tasks.php">My Tasks</a>
+    <a href="logout.php">Logout</a>
+</nav>
+
+    </header>
+
+    <!-- Main Content -->
+    <main class="dashboard-main">
+
+        <!-- Welcome -->
+        <section class="dashboard-welcome">
+            <h2>Welcome to StudyMate!</h2>
+            <p>Organize your studies and achieve your goals.</p>
+        </section>
+
+        <!-- Task Summary -->
+        <section class="dashboard-summary">
+
+            <h2 class="dashboard-section-title">
+                My Tasks Summary
+            </h2>
+
+            <div class="dashboard-stats">
+
+                <div class="dashboard-card">
+                    <h3>Total Tasks</h3>
+                    <p id="stat-total">0</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Pending</h3>
+                    <p id="stat-pending">0</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Completed</h3>
+                    <p id="stat-completed">0</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Add Task Button -->
+        <div class="dashboard-actions">
+            <a href="add_task_form.php" class="dashboard-add-btn">
+                + Add New Task
+            </a>
+        </div>
+
+        <!-- Upcoming Tasks -->
+        <section class="dashboard-upcoming">
+
+            <h2 class="dashboard-section-title">
+                Upcoming Tasks
+            </h2>
+
+            <div class="dashboard-table-wrapper">
+
+                <table class="dashboard-table">
+
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Due Date</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="upcoming-body">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Dashboard JavaScript -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+</html>
